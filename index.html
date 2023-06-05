@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="top"><h1 id="mainh1">Welcome to the Budget Organizer</h1>
+    </nav>
+<div class="madov">
+   <div class="buddiv">
+    <p>Budget</p>
+    <input type="number" placeholder="Enter your Budget" name="budget" id="budget"><br>
+    <h3 class="spn">Budget Left: </h3><h3 class="spn" id="newBudget"></h3><br><br>
+    <input type="button" value="Set Budget" onclick="budget()">
+   </div>
+   <div class="expensediv">
+    <p>Due Date</p>
+    <input type="date" id="usdate">
+    <p>Total Amount</p>
+    <input type="number" placeholder="$" id="expense">
+    <p>Description</p>
+    <input type="text" id="des">
+    <p>Payment Date</p>
+    <input type="date" id="paydate"><br><br>
+    <button id="mybtn" onclick="check()">Add Expense</button>
+   </div>
+   <div id="expenselist">
+
+    <h1>Expense List</h1>    
+    <ul class="mainul">
+        <li class="lsit">Description</li>
+        <li class="lsit">Due Date</li>
+        <li class="lsit">Expenses</li>
+        <li class="lsit">Payment Date</li>
+    </ul>
+   </div>
+</div>
+</body>
+</html>
